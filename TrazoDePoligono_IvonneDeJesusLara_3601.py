@@ -23,9 +23,10 @@ def Bresenhams(n):
     y = rad * np.sin(angulo) + centroY
     for i in range(k):
         for p in range(x.size):  
-            plt.plot(x[i] ,y[i+1], "sm")     
+            #plt.plot(x[i] ,y[i+1], "sm")  
+            plt.plot(x,y, "sb")   
             p =p + 1 
-        plt.plot(x,y, "sb")
+        
         i = i + 1
     print("\n Coordenadas X \n")
     print(x)
